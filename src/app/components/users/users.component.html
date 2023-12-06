@@ -1,0 +1,4 @@
+<app-user *ngFor="let user of users" [user]="user" (id)="getId($event)"></app-user>
+<hr>
+
+<app-user-posts *ngIf="userId" [userId]="userId"></app-user-posts>
